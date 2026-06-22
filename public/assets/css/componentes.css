@@ -1,0 +1,80 @@
+/* ============================================================
+   BUTTON COMPONENTS
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: var(--body);
+  border-radius: var(--r-md);
+  padding: 14px 28px;
+  min-height: 48px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background-color .2s ease, box-shadow .2s ease, transform .15s ease;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--honey-gold);
+  outline-offset: 3px;
+}
+
+.btn-primary {
+  background-color: var(--deep-teal);
+  color: #FFF;
+}
+
+.btn-primary:hover {
+  background-color: var(--deep-teal-dk);
+  box-shadow: 0 4px 16px rgba(30,154,142,.30);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--deep-teal);
+  border-color: var(--deep-teal);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(30,154,142,.07);
+}
+
+.btn-white {
+  background-color: #FFF;
+  color: var(--deep-teal);
+}
+
+.btn-white:hover {
+  background-color: var(--mint-white);
+}
+
+/* ============================================================
+   BADGE
+   ============================================================ */
+.badge {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: var(--caption);
+  padding: 4px 12px;
+  border-radius: var(--r-pill);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.badge--teal  { background: rgba(30,154,142,.12); color: var(--deep-teal); }
+.badge--gold  { background: rgba(242,201,76,.18); color: #92710C; }
+.badge--green { background: rgba(111,207,151,.18); color: #1E7D4A; }
+
+/* ============================================================
+   CARD
+   ============================================================ */
+.card {
+  background: var(--bg-white);
+  border-radius: var(--r-lg);
+  padding: var(--s4);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
