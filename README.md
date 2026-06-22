@@ -8,9 +8,6 @@ La landing page presenta la propuesta de valor del producto, sus principales fun
 
 * Aguilar Aguayo, Jeferson Renzo
 * Salazar Quiche, Darikson Bill
-* Documet Romero, Timothy
-* Falconí Talavera, Santiago Alessandro
-* Collantes Otoya, José Carlos
 * Chui Kcomt, Luis Carlos
 
 ## Segmentos objetivo
