@@ -1,0 +1,377 @@
+/* ============================================================
+   BENEFITS ACCESORIES
+   ============================================================ */
+.benefits {
+    padding: var(--s7) 0;
+    background: var(--bg-white);
+}
+
+.benefits__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s6);
+    align-items: center;
+}
+
+.benefits__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s3);
+}
+
+.benefit-item {
+    display: flex;
+    gap: var(--s2);
+    align-items: flex-start;
+}
+
+.benefit-item__icon {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--r-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.benefit-item__icon i[data-lucide] {
+    width: 18px;
+    height: 18px;
+}
+
+.benefit-item--teal   .benefit-item__icon { background: rgba(30,154,142,.10); }
+.benefit-item--teal   .benefit-item__icon i[data-lucide] { color: var(--deep-teal); }
+.benefit-item--green  .benefit-item__icon { background: rgba(111,207,151,.18); }
+.benefit-item--green  .benefit-item__icon i[data-lucide] { color: #1E7D4A; }
+.benefit-item--gold   .benefit-item__icon { background: rgba(242,201,76,.18); }
+.benefit-item--gold   .benefit-item__icon i[data-lucide] { color: #92710C; }
+.benefit-item--coral  .benefit-item__icon { background: rgba(232,140,125,.15); }
+.benefit-item--coral  .benefit-item__icon i[data-lucide] { color: #C05A4B; }
+
+.benefit-item__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.benefit-item__desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Session widget */
+.benefits__widget {
+    background: var(--mint-white);
+    border-radius: var(--r-xl);
+    padding: var(--s3);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.widget-profile {
+    display: flex;
+    align-items: center;
+    gap: var(--s2);
+    margin-bottom: var(--s3);
+}
+
+.widget-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: var(--soft-aqua);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.widget-avatar__placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--deep-teal);
+    font-size: 14px;
+}
+
+.widget-profile__info strong {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.widget-profile__info span {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.widget-hours {
+    background: var(--bg-white);
+    border-radius: var(--r-md);
+    padding: var(--s2) var(--s3);
+    margin-bottom: var(--s2);
+    border: 1px solid var(--border);
+}
+
+.widget-hours__label {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.widget-hours__num {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--deep-teal);
+}
+
+.widget-hours__sub {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.widget-task {
+    background: var(--deep-teal);
+    color: #FFF;
+    border-radius: var(--r-md);
+    padding: var(--s2) var(--s3);
+    margin-bottom: var(--s2);
+}
+
+.widget-task__name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: var(--s1);
+}
+
+.widget-task__meta {
+    display: flex;
+    gap: var(--s1);
+    flex-wrap: wrap;
+}
+
+.widget-task__chip {
+    background: rgba(255,255,255,.18);
+    border-radius: var(--r-pill);
+    padding: 3px 10px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.widget-msg {
+    background: #FFF9EC;
+    border-radius: var(--r-md);
+    padding: var(--s2);
+    border: 1px solid #F2C94C33;
+    font-size: 13px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: var(--s1);
+}
+
+.widget-msg i[data-lucide] {
+    color: var(--honey-gold);
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+    .benefits__inner { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials {
+    padding: var(--s7) 0;
+}
+
+.testimonials__header {
+    text-align: center;
+    margin-bottom: var(--s6);
+}
+
+.testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--s3);
+}
+
+.testimonial-card {
+    background: var(--bg-white);
+    border-radius: var(--r-lg);
+    padding: var(--s4);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s3);
+}
+
+.testimonial-card__quote {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-style: italic;
+    flex: 1;
+}
+
+.testimonial-card__author {
+    display: flex;
+    align-items: center;
+    gap: var(--s2);
+}
+
+.t-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.t-avatar--a { background: var(--deep-teal); }
+.t-avatar--b { background: #8B5CF6; }
+.t-avatar--c { background: var(--muted-coral); }
+
+.t-author__name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.t-author__role {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+    .testimonials__grid { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .testimonials__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq {
+    padding: var(--s7) 0;
+    background: #F5F6F8;
+}
+
+.faq__header {
+    text-align: center;
+    margin-bottom: var(--s6);
+}
+
+/* Contenedor principal de la lista */
+.faq__list {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important; /* Separación limpia entre cada tarjeta */
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* Cada pregunta convertida en tarjeta con el gradiente del Mockup */
+.faq-item {
+    background: #FFFFFF !important;
+    border: 1px solid #E6E8EC !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    transition: all .25s ease !important;
+}
+
+/* Feedback visual al pasar el cursor */
+.faq-item:hover {
+    border-color: #D5D9E0 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,.05) !important;
+}
+
+/* Botón disparador: Alinea texto e ícono perfectamente */
+.faq-item__question {
+    width: 100% !important;
+    background: transparent !important;
+    border: none !important;
+
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    padding: 24px 20px !important;
+
+    cursor: pointer !important;
+    text-align: left !important;
+
+    color: #172033 !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+}
+
+.faq-item__question span {
+    padding-right: 16px !important;
+}
+
+/* Ícono de la flecha en color Soft Aqua */
+.faq-item__icon {
+    color: #14B8A6 !important;
+    flex-shrink: 0 !important;
+    transition: transform .3s ease !important;
+}
+
+/* 🌟 ROTACIÓN DE LA FLECHA: Sincronizada exactamente con la clase '.open' que añade tu JS */
+.faq-item.open .faq-item__icon {
+    transform: rotate(180deg) !important;
+}
+
+/* Contenedor de la Respuesta */
+.faq-item__answer {
+    color: #667085 !important;
+    font-size: .95rem !important;
+    line-height: 1.8 !important;
+}
+
+/* 🌟 ESPACIADO INTERNO CORRECTO: Solo cuando la tarjeta está abierta (.open) */
+.faq-item__answer-inner {
+    padding: 0 20px 24px 20px !important;
+}
+
+.faq-item.open {
+    border-left: 4px solid #14B8A6 !important;
+}
+
+.faq-item.open .faq-item__question {
+    color: #14B8A6 !important;
+}
+
+.faq-item.open .faq-item__icon {
+    transform: rotate(180deg);
+}

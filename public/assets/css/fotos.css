@@ -1,0 +1,155 @@
+/* Contenedor Grid: Asegura que las dos tarjetas ocupen el mismo alto y se alineen bien */
+.segments__grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--s4, 24px) !important;
+    width: 100% !important;
+}
+
+/* 🌟 CORRECCIÓN CRÍTICA: Aplicamos el fondo al envoltorio directo de la imagen para que funcione la mezcla */
+.segments__grid .segment-card:nth-of-type(1) .segment-card__image-wrapper {
+    background-color: #1B3A5C !important; /* Fondo Azul para Estudiantes */
+}
+.segments__grid .segment-card:nth-of-type(2) .segment-card__image-wrapper {
+    background-color: #0D3A35 !important; /* Fondo Verde para Profesionales */
+}
+
+/* La Tarjeta: Forzamos la altura vertical idéntica a la Imagen 2 */
+.segment-card {
+    position: relative !important;
+    min-height: 420px !important; /* Altura estilizada idéntica al objetivo */
+    height: 420px !important;
+    border-radius: var(--r-xl, 16px) !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    background-color: #0A1412 !important; /* Fondo de seguridad */
+    border: 1px solid var(--border, rgba(255,255,255,0.1)) !important;
+}
+
+/* El contenedor de la imagen interna */
+.segment-card__image-wrapper {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0 !important;
+    overflow: hidden !important;
+}
+
+/* La Imagen Real: Forzamos a que llene el contenedor sin deformarse y absorber el color */
+.segment-card__img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    transition: transform 0.4s ease !important;
+
+    /* 🌟 EFECTO DE FUSIÓN: Convierte la foto a escala de grises y la tiñe con el color de su contenedor */
+    mix-blend-mode: luminosity !important;
+    opacity: 0.65 !important; /* Bajado un poco a 0.65 para que el azul y verde sean más intensos */
+}
+
+/* Efecto hover interactivo */
+.segment-card:hover .segment-card__img {
+    transform: scale(1.04) !important;
+}
+
+/* El Degradado: Transparente arriba (para que la imagen brille) y oscuro abajo */
+.segment-card__overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    /* 🌟 Genera la fusión perfecta entre la foto y el texto */
+    background: linear-gradient(
+            to top,
+            rgba(10, 20, 18, 0.98) 0%,    /* Oscuro en la base del texto */
+            rgba(10, 20, 18, 0.60) 45%,   /* Transición suave intermedia */
+            rgba(10, 20, 18, 0.10) 75%,   /* Muy claro arriba para no tapar la foto */
+            transparent 100%
+    ) !important;
+    z-index: 1 !important;
+}
+
+/* Contenido de textos e iconos */
+.segment-card__content {
+    position: relative !important;
+    z-index: 2 !important;
+    padding: 32px !important; /* Espaciado interno limpio */
+    width: 100% !important;
+    color: #FFFFFF !important;
+    box-sizing: border-box !important;
+}
+
+/* Tag superior con color Aqua original */
+.segment-card__tag {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    background: rgba(30, 154, 142, 0.18) !important; /* Fondo sutil aqua */
+    color: var(--soft-aqua, #7EDCD1) !important;
+    border-radius: 50px !important;
+    padding: 6px 14px !important;
+    font-size: 12px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    margin-bottom: 12px !important;
+    border: 1px solid rgba(126, 220, 209, 0.3) !important;
+    backdrop-filter: blur(4px) !important;
+}
+
+.segment-card__tag i,
+.segment-card__tag i[data-lucide] {
+    color: var(--soft-aqua, #7EDCD1) !important;
+}
+
+/* Título */
+.segment-card__title {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    margin-bottom: 8px !important;
+    color: #FFFFFF !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Cuerpo de texto */
+.segment-card__body {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    opacity: 0.90 !important;
+    margin-bottom: 20px !important;
+    color: #FFFFFF !important;
+}
+
+/* Enlace "Saber más" en Aqua */
+.segment-card__link {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: var(--soft-aqua, #7EDCD1) !important;
+    text-decoration: none !important;
+    transition: gap 0.2s ease, color 0.2s ease !important;
+}
+
+.segment-card__link:hover {
+    gap: 10px !important;
+    color: #FFFFFF !important;
+}
+
+.segment-card__link i {
+    color: inherit !important;
+}
+
+/* Ajuste Responsivo para Celulares */
+@media (max-width: 768px) {
+    .segments__grid {
+        grid-template-columns: 1fr !important;
+    }
+    .segment-card {
+        min-height: 380px !important;
+        height: 380px !important;
+    }
+}
