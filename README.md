@@ -45,13 +45,6 @@ FocusFlow es una solución digital adaptativa orientada a mejorar la gestión de
 
 La landing page presenta la propuesta de valor del producto, sus principales funcionalidades, beneficios, segmentos objetivo y llamados a la acción para que los usuarios comprendan rápidamente cómo FocusFlow puede ayudarlos a organizar tareas, reducir distracciones y mantener sesiones de enfoque más saludables.
 
-## Autores
-
-* Aguilar Aguayo, Jeferson Renzo
-* Salazar Quiche, Darikson Bill
-* Falconí Talavera, Santiago Alessandro
-* Collantes Otoya, José Carlos
-* Chui Kcomt, Luis Carlos
 
 ## Segmentos objetivo
 
