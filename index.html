@@ -174,48 +174,54 @@
      ============================================================ -->
     <section class="neuro-empathy section" aria-labelledby="neuro-empathy-title">
       <div class="container">
-        <div class="neuro-empathy__inner reveal">
+        <div class="neuro-empathy__header reveal">
+          <span class="badge badge--teal">Enfoque neuro-empático</span>
 
-          <div class="neuro-empathy__copy">
-            <span class="badge badge--teal">Enfoque neuro-empático</span>
+          <h2 class="section-title neuro-empathy__title" id="neuro-empathy-title">
+            No te exige concentrarte.<br>
+            Te ayuda a volver.
+          </h2>
 
-            <h2 class="section-title" id="neuro-empathy-title">
-              No te exige concentrarte. Te ayuda a volver.
-            </h2>
+          <p class="section-subtitle neuro-empathy__subtitle">
+            FocusFlow entiende que distraerse no es fallar. Por eso utiliza micro-intervenciones
+            amables, recordatorios suaves y una interfaz calmada para ayudarte a retomar tu tarea
+            paso a paso, sin culpa ni ansiedad.
+          </p>
+        </div>
 
-            <p class="section-subtitle">
-              FocusFlow entiende que distraerse no es fallar. Por eso usa micro-intervenciones amables,
-              recordatorios suaves y una interfaz calmada para ayudarte a retomar tu tarea sin ansiedad.
+        <div class="neuro-empathy__grid reveal">
+          <article class="neuro-empathy-card">
+            <div class="neuro-empathy-card__icon">
+              <i data-lucide="heart-handshake" aria-hidden="true"></i>
+            </div>
+            <h3>Sin culpa</h3>
+            <p>
+              Evita mensajes como “fallaste” o “perdiste tiempo”.
+              Te acompaña con frases claras, comprensivas y respetuosas.
             </p>
-          </div>
+          </article>
 
-          <div class="neuro-empathy__cards">
+          <article class="neuro-empathy-card">
+            <div class="neuro-empathy-card__icon">
+              <i data-lucide="waves" aria-hidden="true"></i>
+            </div>
+            <h3>A tu ritmo</h3>
+            <p>
+              Adapta sesiones, pausas y recordatorios según tu energía,
+              tu carga cognitiva y tu contexto de estudio o trabajo.
+            </p>
+          </article>
 
-            <article class="neuro-empathy-card">
-              <div class="neuro-empathy-card__icon">
-                <i data-lucide="heart-handshake" aria-hidden="true"></i>
-              </div>
-              <h3>Sin culpa</h3>
-              <p>Evita mensajes como “fallaste” o “perdiste tiempo”. Te acompaña con frases claras y comprensivas.</p>
-            </article>
-
-            <article class="neuro-empathy-card">
-              <div class="neuro-empathy-card__icon">
-                <i data-lucide="waves" aria-hidden="true"></i>
-              </div>
-              <h3>A tu ritmo</h3>
-              <p>Adapta sesiones, pausas y recordatorios según tu energía, carga cognitiva y contexto de estudio o trabajo.</p>
-            </article>
-
-            <article class="neuro-empathy-card">
-              <div class="neuro-empathy-card__icon">
-                <i data-lucide="eye-off" aria-hidden="true"></i>
-              </div>
-              <h3>Menos estímulos</h3>
-              <p>Reduce ruido visual, prioriza una acción principal y mantiene una navegación simple y predecible.</p>
-            </article>
-
-          </div>
+          <article class="neuro-empathy-card">
+            <div class="neuro-empathy-card__icon">
+              <i data-lucide="eye-off" aria-hidden="true"></i>
+            </div>
+            <h3>Menos estímulos</h3>
+            <p>
+              Reduce el ruido visual, prioriza una acción principal
+              y mantiene una navegación simple, clara y predecible.
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -727,6 +733,8 @@
   <script src="./assets/js/navbar.js"></script>
   <script src="./assets/js/faq.js"></script>
   <script src="./assets/js/cta-form.js"></script>
-
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
