@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="./assets/css/fotos.css" />
   <link rel="stylesheet" href="./assets/css/secciones.css" />
   <link rel="stylesheet" href="./assets/css/widgets.css" />
+  <link rel="stylesheet" href="./assets/css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/seccion-neuro-empathy.css.css" />
 </head>
 <body>
 
@@ -650,83 +652,99 @@
 
   </main>
 
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
-  <footer class="footer" aria-label="Pie de página">
-    <div class="container">
-      <div class="footer__top">
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer class="footer">
+      <div class="container">
 
-        <!-- Brand -->
-        <div>
-          <div class="footer__brand-name">
-            <svg viewBox="0 0 32 32" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M4 22 Q10 10 16 18 Q22 26 28 14" stroke="#7EDCD1" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-              <circle cx="28" cy="12" r="3" fill="#7EDCD1"/>
-            </svg>
-            FocusFlow
+        <div class="footer__top">
+          <!-- Marca -->
+          <div class="footer__brand">
+            <a href="#" class="footer__brand-name" aria-label="Ir al inicio de FocusFlow">
+              <svg viewBox="0 0 64 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 14C10 4 18 4 24 14C30 24 38 24 44 14C50 4 56 4 60 10"
+                      stroke="currentColor"
+                      stroke-width="5"
+                      stroke-linecap="round"/>
+              </svg>
+              <span class="footer__brand-focus">Focus</span><span class="footer__brand-flow">Flow</span>
+            </a>
+
+            <p class="footer__brand-desc">
+              FocusFlow es la plataforma de productividad diseñada específicamente para
+              mentes neurodivergentes. Accesibilidad, calma y eficiencia en un solo lugar.
+            </p>
           </div>
-          <p class="footer__brand-desc">
-            FocusFlow es una plataforma de productividad diseñada para estudiantes con TDAH
-            y profesionales neurodivergentes. Organización, accesibilidad y calma en un solo lugar.
-          </p>
-          <div class="footer__social" aria-label="Redes sociales">
-            <a href="#" class="footer__social-link" aria-label="Twitter / X">
-              <i data-lucide="twitter"></i>
-            </a>
-            <a href="#" class="footer__social-link" aria-label="Instagram">
-              <i data-lucide="instagram"></i>
-            </a>
-            <a href="#" class="footer__social-link" aria-label="LinkedIn">
-              <i data-lucide="linkedin"></i>
-            </a>
+
+          <!-- Plataforma -->
+          <div class="footer__col">
+            <h3 class="footer__col-title">Plataforma</h3>
+            <ul class="footer__col-links">
+              <li><a href="#features">Funciones</a></li>
+              <li><a href="#como-funciona">Entorno de Enfoque</a></li>
+              <li><a href="#beneficios">Organizador de Tareas</a></li>
+              <li><a href="#features">Soporte Sensorial</a></li>
+            </ul>
+          </div>
+
+          <!-- Compañía -->
+          <div class="footer__col">
+            <h3 class="footer__col-title">Compañía</h3>
+            <ul class="footer__col-links">
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Carreras</a></li>
+              <li><a href="#">Impacto Social</a></li>
+            </ul>
+          </div>
+
+          <!-- Síguenos -->
+          <div class="footer__col footer__col--social">
+            <h3 class="footer__col-title">Síguenos</h3>
+
+            <div class="footer__social" aria-label="Redes sociales de FocusFlow">
+              <!-- Twitter / X -->
+              <a href="#" class="footer__social-link" aria-label="Twitter o X de FocusFlow">
+                <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/>
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="#" class="footer__social-link" aria-label="LinkedIn de FocusFlow">
+                <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.4 8h4.2v14H.4V8Zm7.4 0h4.03v1.92h.06c.56-1.06 1.94-2.18 4-2.18 4.28 0 5.07 2.82 5.07 6.48V22h-4.2v-7.02c0-1.67-.03-3.82-2.33-3.82-2.33 0-2.69 1.82-2.69 3.7V22H7.8V8Z"/>
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a href="#" class="footer__social-link" aria-label="Instagram de FocusFlow">
+                <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-2.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="footer__systems">
+              <span class="footer__systems-dot"></span>
+              <span class="footer__systems-text">SISTEMAS OPERATIVOS</span>
+            </div>
           </div>
         </div>
 
-        <!-- Plataforma -->
-        <div>
-          <div class="footer__col-title">Plataforma</div>
-          <ul class="footer__col-links">
-            <li><a href="#">Funciones</a></li>
-            <li><a href="#">Entorno de Enfoque</a></li>
-            <li><a href="#">Organizador de Tareas</a></li>
-            <li><a href="#">Soporte Sensorial</a></li>
-          </ul>
-        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">© 2024 FocusFlow. Todos los derechos reservados.</p>
 
-        <!-- Compañía -->
-        <div>
-          <div class="footer__col-title">Compañía</div>
-          <ul class="footer__col-links">
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Carreras</a></li>
-            <li><a href="#">Impacto Social</a></li>
-          </ul>
-        </div>
-
-        <!-- Síguenos -->
-        <div>
-          <div class="footer__col-title">Síguenos</div>
-          <ul class="footer__col-links">
-            <li><a href="#">Twitter / X</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
+          <div class="footer__legal">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Accesibilidad</a>
+          </div>
         </div>
 
       </div>
-
-      <div class="footer__bottom">
-        <p class="footer__copy">© 2026 FocusFlow. Todos los derechos reservados.</p>
-        <nav class="footer__legal" aria-label="Legal">
-          <a href="#">Privacidad</a>
-          <a href="#">Términos</a>
-          <a href="#">Accesibilidad</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
   <!-- Archivos Scripts de JavaScript Separados Modularmente -->
   <script src="./assets/js/main.js"></script>
