@@ -353,7 +353,7 @@
 
           <article class="segment-card reveal reveal-delay-1">
             <div class="segment-card__image-wrapper">
-              <img src="./assets/img/student-adhd.png" alt="Estudiantes universitarios en un auditorio" class="segment-card__img" />
+              <img src="./public/assets/img/student-adhd.png" alt="Estudiantes universitarios en un auditorio" class="segment-card__img" />
             </div>
             <div class="segment-card__overlay"></div>
             
@@ -372,7 +372,7 @@
 
           <article class="segment-card reveal reveal-delay-2">
             <div class="segment-card__image-wrapper">
-              <img src="./assets/img/neurodivergent-professional.png" alt="Profesional concentrado trabajando en su laptop" class="segment-card__img" />
+              <img src="./public/assets/img/neurodivergent-professional.png" alt="Profesional concentrado trabajando en su laptop" class="segment-card__img" />
             </div>
             <div class="segment-card__overlay"></div>
             
@@ -729,7 +729,7 @@
       </div>
 
       <div class="footer__bottom">
-        <p class="footer__copy">© 2024 FocusFlow. Todos los derechos reservados.</p>
+        <p class="footer__copy">© 2026 FocusFlow. Todos los derechos reservados.</p>
 
         <div class="footer__legal">
           <a href="#">Privacidad</a>
@@ -742,10 +742,18 @@
   </footer>
 
   <!-- Archivos Scripts de JavaScript Separados Modularmente -->
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/navbar.js"></script>
-  <script src="./assets/js/faq.js"></script>
-  <script src="./assets/js/cta-form.js"></script>
+  <script src="./public/assets/js/main.js"></script>
+  <script src="./public/assets/js/navbar.js"></script>
+  <script src="./public/assets/js/faq.js"></script>
+  <script src="./public/assets/js/cta-form.js"></script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+  </script>
 
 </body>
 </html>
